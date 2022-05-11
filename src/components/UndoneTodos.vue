@@ -71,9 +71,9 @@ export default class UndoneTodos extends Vue {
     ) as HTMLInputElement;
 
     if (box.checked) {
-      this.todos.sort((a, b) => a.title.localeCompare(b.title));
+      this.helper.sortByLetter(this.todos);
     } else {
-      this.todos.sort((a, b) => a.timestamp - b.timestamp);
+      this.helper.sortByTimeStamp(this.todos);
     }
   }
 }

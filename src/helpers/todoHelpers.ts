@@ -22,22 +22,11 @@ export class todoHelper {
     }
   }
 
-  // listSort(todos: Todos[]) {
-  //   function compare(a: Todos, b: Todos) {
-  //     if (a.title < b.title) return -1;
-  //     if (a.title > b.title) return 1;
-  //     return 0;
-  //   }
-  //   return todos.sort(compare);
-  // }
+  sortByLetter(todos: Todos[]) {
+    todos.sort((a, b) => a.title.localeCompare(b.title));
+  }
 
-  // listUnSort(arrays: Todos[]) {
-  //   function compare(a: Todos, b: Todos) {
-  //     if (a.title > b.title) return -1;
-  //     if (a.title < b.title) return 1;
-  //     return 0;
-  //   }
-
-  //   return arrays.sort(compare);
-  // }
+  sortByTimeStamp(todos: Todos[]) {
+    todos.sort((a, b) => a.timestamp - b.timestamp);
+  }
 }

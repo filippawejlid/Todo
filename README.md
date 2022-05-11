@@ -1,4 +1,5 @@
 # todo
+School assignment, create a todo using vue, typescript and scss.
 
 ## Project setup
 ```

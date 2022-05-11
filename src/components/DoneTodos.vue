@@ -8,7 +8,7 @@
       <span class="switch-label"></span>
       <span class="switch-handle"></span>
     </label>
-    <h2>What you've done.</h2>
+    <h2>What you've done</h2>
     <div>
       <ul class="container" v-for="todo in todos" :key="todo.id">
         <li class="item">
